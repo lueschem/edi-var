@@ -10,6 +10,11 @@
     path: /etc/edi-boot-shim/edi-boot-shim.cfg.d
     state: directory
 
+- name: Install boot command.
+  copy:
+    src: boot.cmd.{{ ebs_template }}.arm64.multiboot
+    dest: /etc/edi-boot-shim/
+
 - name: Configure edi-boot-shim for multiboot.
   template:
     src: multiboot.cfg

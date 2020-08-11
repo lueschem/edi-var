@@ -1,6 +1,6 @@
 general:
     parameters:
-        mender_device_type: iot-gate-imx8
+        mender_device_type: imx8mn-var-som
 
 bootstrap:
     architecture: arm64
@@ -8,13 +8,13 @@ bootstrap:
 playbooks:
     300_board_support:
         parameters:
-            ebs_template: ucm-imx8m-mini
-            kernel_image: linux-image-4.14.98-iot-gate-imx8-1.0-06027-g8c54539758f2
+            ebs_template: imx8mn-var-som
+            kernel_image: linux-image-4.14.98-gf54b007d1548
             uboot_device_offset: '0x400000'
             uboot_env_size: '0x1000'
     900_base_system_cleanup:
         parameters:
-            hostname: iot-gate-imx8
+            hostname: imx8mn-var-som
 
 shared_folders:
     edi_workspace:

@@ -1,0 +1,7 @@
+setenv bootargs console=${console} root=${edi_root_device} rw rootwait ${cma_size}
+
+ext4load mmc ${edi_mmc_device} ${loadaddr} /boot/vmlinuz-__KERNEL_PACKAGE_VERSION__
+ext4load mmc ${edi_mmc_device} ${fdt_addr} /usr/lib/linux-image-__KERNEL_PACKAGE_VERSION__/freescale/${fdt_file}
+
+booti ${loadaddr} - ${fdt_addr}
+
