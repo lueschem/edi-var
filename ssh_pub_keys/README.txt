@@ -1,9 +1,9 @@
 All ssh public keys within this folder will be added to the authorized_keys
-file (/home/compulab/.ssh/authorized_keys) of the compulab user of the generated target
+file (/home/edi/.ssh/authorized_keys) of the edi user of the generated target
 system (container or OS image).
 
 This will then allow the corresponding people to have a convenient access
-to the target system using ssh (e.g. ssh compulab@IP_OF_TARGET_SYSTEM).
+to the target system using ssh (e.g. ssh edi@IP_OF_TARGET_SYSTEM).
 
 This is especially useful within a company setup where one employee (or a build
 server) generates the images and multiple other employees want to access the
