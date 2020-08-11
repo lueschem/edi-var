@@ -12,6 +12,8 @@ playbooks:
             kernel_image: linux-image-4.14.98-gf54b007d1548
             uboot_device_offset: '0x400000'
             uboot_env_size: '0x1000'
+            mender_rootfs_part_a: /dev/mmcblk1p3
+            mender_rootfs_part_b: /dev/mmcblk1p4
     900_base_system_cleanup:
         parameters:
             hostname: var-som-mx8m-nano
