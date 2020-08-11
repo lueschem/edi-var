@@ -1,6 +1,6 @@
 general:
     parameters:
-        mender_device_type: imx8mn-var-som
+        mender_device_type: var-som-mx8m-nano
 
 bootstrap:
     architecture: arm64
@@ -8,13 +8,13 @@ bootstrap:
 playbooks:
     300_board_support:
         parameters:
-            ebs_template: imx8mn-var-som
+            ebs_template: var-som-mx8m-nano
             kernel_image: linux-image-4.14.98-gf54b007d1548
             uboot_device_offset: '0x400000'
             uboot_env_size: '0x1000'
     900_base_system_cleanup:
         parameters:
-            hostname: imx8mn-var-som
+            hostname: var-som-mx8m-nano
 
 shared_folders:
     edi_workspace:

@@ -6,14 +6,14 @@
 
 # edi-var
 
-Debian tool chain and image generation for the Variscite imx8mn-var-som.
+Debian tool chain and image generation for the Variscite var-som-mx8m-nano.
 
 ## Introduction
 
 The edi configuration contained in this repository can be used to
 generate the following artifacts:
 
-* A Debian buster arm64 (64bit) image suitable for the Variscite imx8mn-var-som.
+* A Debian buster arm64 (64bit) image suitable for the Variscite var-som-mx8m-nano.
 * A matching Mender update artifacts for the above configuration.
 * An amd64/arm64 based LXD container with a pre-installed
 cross development toolchain for C and C++.
@@ -47,7 +47,7 @@ sudo apt install e2fsprogs bmap-tools mtools parted zerofree python3-sphinx mend
 A target image can be created using the following command:
 
 ``` bash
-sudo edi -v image create imx8mn-var-som-buster-arm64.yml
+sudo edi -v image create var-som-mx8m-nano-buster-arm64.yml
 ```
 
 The resulting image can be copied to a SD card (here /dev/mmcblk0)
@@ -55,7 +55,7 @@ using the following command
 (**Please note that everything on the SD card will be erased!**):
 
 ``` bash
-sudo bmaptool copy artifacts/imx8mn-var-som-buster-arm64.img /dev/mmcblk0
+sudo bmaptool copy artifacts/var-som-mx8m-nano-buster-arm64.img /dev/mmcblk0
 ```
 
 If the command fails, unmount the SD card and repeat the above command.
@@ -79,13 +79,13 @@ A cross development container can be created using the
 following command:
 
 ``` bash
-sudo edi -v lxc configure imx8mn-var-som-buster-arm64-cross-dev imx8mn-var-som-buster-arm64-cross-dev.yml
+sudo edi -v lxc configure var-som-mx8m-nano-buster-arm64-cross-dev var-som-mx8m-nano-buster-arm64-cross-dev.yml
 ```
 
 The container can be accessed as follows (the password is _ChangeMe!_):
 
 ``` bash
-lxc exec imx8mn-var-som-buster-arm64-cross-dev -- login ${USER}
+lxc exec var-som-mx8m-nano-buster-arm64-cross-dev -- login ${USER}
 ```
 
 Or with ssh (Hint: retrieve IP_OF_CONTAINER with `lxc list`):
