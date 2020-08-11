@@ -4,7 +4,7 @@
 
 **==================================**
 
-# edi-imx
+# edi-var
 
 Debian tool chain and image generation for the Variscite imx8mn-var-som.
 
@@ -28,7 +28,7 @@ make sure that you have a backup copy of your data.
 
 ### Preparation
 
-Prior to using edi-imx you have to install [edi](https://www.get-edi.io)
+Prior to using edi-var you have to install [edi](https://www.get-edi.io)
 according to
 [this instructions](https://docs.get-edi.io/en/latest/getting_started.html).
 Please take a careful look at the "Setting up ssh Keys" section since you
@@ -65,10 +65,10 @@ access it using ssh (the access should be granted thanks to to your
 ssh keys):
 
 ``` bash
-ssh edi@IP_ADDRESS
+ssh imx@IP_ADDRESS
 ```
 
-The password for the user _edi_ is _ChangeMe!_ (just in case you want to
+The password for the user _imx_ is _ChangeMe!_ (just in case you want to
 execute a command using `sudo` or login via a local terminal).
 
 **Important: Do not flash the generated image to the eMMC yet - u-boot is missing!**
