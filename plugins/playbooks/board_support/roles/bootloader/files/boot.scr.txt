@@ -48,6 +48,8 @@ setexpr secondary_scriptaddr ${loadaddr}
 setenv edi_mmc_device ${mmcdev}:${mender_boot_part_hex}
 setenv edi_root_device /dev/mmcblk1p${mender_boot_part}
 
+run findfdt
+
 if ext4load mmc ${edi_mmc_device} ${secondary_scriptaddr} /boot/boot.scr
 then
     echo "Successfully loaded secondary boot script."
