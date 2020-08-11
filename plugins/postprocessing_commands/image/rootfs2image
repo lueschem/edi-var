@@ -35,6 +35,7 @@ Convert a root file system into a device image.
 
 Required arguments:
  -i DIRECTORY, --input=DIRECTORY    : Directory that contains the root file system.
+ -u UBOOT_IMAGE, --uboot=UBOOT_IMAGE: The binary u-boot image.
  -o FILE, --output=FILE             : Name of the file that will contain the resulting image.
  -p FILE, --partition-output=FILE   : Name of the file that will contain the resulting partition image.
 Optional arguments:
@@ -87,7 +88,7 @@ clean_up()
     rm -rf "${TEMPDIR}"
 }
 
-if ! options=$(getopt -o hi:o:p:w: -l help,log:,input:,output:,partition-output:,workdir: -- "$@")
+if ! options=$(getopt -o hi:o:p:w:u: -l help,log:,input:,output:,partition-output:,workdir:,uboot: -- "$@")
 then
     print_usage
     print_error_and_exit "Invalid option."
@@ -99,6 +100,7 @@ SCRIPTDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOTFS_DIR=""
 DEVICE_IMAGE=""
 DEVICE_PARTITION_IMAGE=""
+U_BOOT_IMAGE=""
 LOG_LEVEL="INFO"
 
 while true
@@ -106,6 +108,7 @@ do
     case "${1}" in
         -h|--help)             print_usage && exit 0;;
         -i|--input)            ROOTFS_DIR="${2}"; shift 2;;
+        -u|--uboot)            U_BOOT_IMAGE="${2}"; shift 2;;
         -o|--output)           DEVICE_IMAGE="${2}"; shift 2;;
         -p|--partition-output) DEVICE_PARTITION_IMAGE="${2}"; shift 2;;
         -w|--workdir)          WORKDIR="${2}"; shift 2;;
@@ -126,6 +129,12 @@ if [ -z "${ROOTFS_DIR}" ]
 then
     print_usage
     print_error_and_exit "Missing rootfs directory parameter."
+fi
+
+if [ -z "${U_BOOT_IMAGE}" ]
+then
+    print_usage
+    print_error_and_exit "Missing u-boot image."
 fi
 
 if [ -z "${DEVICE_IMAGE}" ]
@@ -223,6 +232,8 @@ do_unmount
 zerofree "${ROOT_LD}"
 
 dd if="${ROOT_LD}" of="${DEVICE_PARTITION_IMAGE}"
+
+dd if=${U_BOOT_IMAGE} of="${DEVICE_IMAGE}" bs=1K seek=32 conv=notrunc,fsync
 
 clean_up "${TEMPDIR}"
 
