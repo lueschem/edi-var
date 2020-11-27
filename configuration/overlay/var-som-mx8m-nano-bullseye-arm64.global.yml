@@ -9,7 +9,7 @@ playbooks:
     300_board_support:
         parameters:
             ebs_template: var-som-mx8m-nano
-            kernel_image: linux-image-4.14.98-gf54b007d1548
+            kernel_image: linux-image-5.4.24-ge3d73e92f28e
             uboot_device_offset: '0x400000'
             uboot_env_size: '0x1000'
             mender_rootfs_part_a: /dev/mmcblk1p3
