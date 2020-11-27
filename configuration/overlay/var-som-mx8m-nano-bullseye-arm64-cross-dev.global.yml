@@ -13,7 +13,7 @@ playbooks:
             cross_architecture: arm64
     900_base_system_cleanup:
         parameters:
-            hostname: iot-gate-imx8
+            hostname: var-som-mx8m-nano
 
 postprocessing_commands:
     050_timestamp:
