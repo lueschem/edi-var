@@ -65,10 +65,10 @@ access it using ssh (the access should be granted thanks to to your
 ssh keys):
 
 ``` bash
-ssh imx@IP_ADDRESS
+ssh variscite@IP_ADDRESS
 ```
 
-The password for the user _imx_ is _ChangeMe!_ (just in case you want to
+The password for the user _variscite_ is _variscite_ (just in case you want to
 execute a command using `sudo` or login via a local terminal).
 
 **Important: Do not flash the generated image to the eMMC yet - u-boot is missing!**

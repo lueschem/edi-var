@@ -36,7 +36,9 @@ playbooks:
         path: playbooks/debian/base_system/main.yml
         parameters:
             create_default_user: True
-            default_user_name: imx
+            default_user_name: variscite
+            # password is variscite
+            default_user_password: $6$qrh.v5qpN$xE6hIKZjqYo/vymXuYxdkKv/xU.TRVzElrXPii2wft1pbDiIVP1FMtcACDOcP4FpWmnFUopTUM36mq9NxPIp5/
             install_openssh_server: True
             disable_ssh_password_authentication: True
             install_documentation: {% if edi_create_distributable_image %}changelog{% else %}full{% endif %}
@@ -52,7 +54,7 @@ playbooks:
     900_base_system_cleanup:
         path: playbooks/debian/base_system_cleanup/main.yml
         parameters:
-            hostname: edi-imx
+            hostname: edi-var
             document_build_setup: true
             document_installed_packages: true
 
@@ -87,7 +89,7 @@ postprocessing_commands:
         output:
             pp_documentation: {{ edi_configuration_name }}_documentation
         parameters:
-            author: The edi-imx Project Team
+            author: The edi-var Project Team
 
 documentation_steps:
     100_index:
