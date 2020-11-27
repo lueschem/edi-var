@@ -1,12 +1,7 @@
-**==================================**
+# edi Project Configuration for Variscite Boards
 
-**Work in progress - do not use yet!**
-
-**==================================**
-
-# edi-var
-
-Debian tool chain and image generation for the Variscite var-som-mx8m-nano.
+This [edi](https://www.get-edi.io) project configuration currently supports the
+[Variscite var-som-mx8m-nano](https://www.variscite.com/product/system-on-module-som/cortex-a53-krait/var-som-mx8m-nano-nxp-i-mx-8m-nano/).
 
 ## Introduction
 
@@ -28,8 +23,8 @@ make sure that you have a backup copy of your data.
 
 ### Preparation
 
-Prior to using edi-var you have to install [edi](https://www.get-edi.io)
-according to
+Prior to using this edi project configuration you have to install
+[edi](https://www.get-edi.io) according to
 [this instructions](https://docs.get-edi.io/en/latest/getting_started.html).
 Please take a careful look at the "Setting up ssh Keys" section since you
 will need a proper ssh key setup in order to access the container or
@@ -72,6 +67,15 @@ The password for the user _variscite_ is _variscite_ (just in case you want to
 execute a command using `sudo` or login via a local terminal).
 
 **Important: Do not flash the generated image to the eMMC yet - u-boot is missing!**
+
+### Connecting to Mender
+
+To enable over the air (OTA) updates, the generated images are configured
+to connect to [https://hosted.mender.io/](https://hosted.mender.io/).
+In order to connect to your Mender tenant you have to provide your tenant token prior to building the images.
+The tenant token can be added to `configuration/mender/mender.yml`. If you do not want to
+add the tenant token to the version control system you can also copy `configuration/mender/mender.yml` to
+`configuration/mender/mender_custom.yml` and add the tenant token there.
 
 ### Creating a Cross Development LXD Container
 

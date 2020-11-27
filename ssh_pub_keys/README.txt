@@ -1,9 +1,9 @@
 All ssh public keys within this folder will be added to the authorized_keys
-file (/home/edi/.ssh/authorized_keys) of the edi user of the generated target
+file (/home/variscite/.ssh/authorized_keys) of the variscite user of the generated target
 system (container or OS image).
 
 This will then allow the corresponding people to have a convenient access
-to the target system using ssh (e.g. ssh edi@IP_OF_TARGET_SYSTEM).
+to the target system using ssh (e.g. ssh variscite@IP_OF_TARGET_SYSTEM).
 
 This is especially useful within a company setup where one employee (or a build
 server) generates the images and multiple other employees want to access the
@@ -30,5 +30,5 @@ https://docs.get-edi.io/en/latest/config_management/plugins.html
 For even more information please read this blog post:
 https://www.get-edi.io/Secure-by-Default-ssh-Setup/
 
-Please note that password based login via ssh is disabled by default within the
-edi-imx configuration.
+Please note that password based login via ssh is disabled by default within this
+edi project configuration.

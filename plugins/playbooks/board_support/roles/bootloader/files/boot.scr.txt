@@ -46,6 +46,8 @@ fi
 setexpr secondary_scriptaddr ${loadaddr}
 
 setenv edi_mmc_device ${mmcdev}:${mender_boot_part_hex}
+setenv edi_boot_device /dev/mmcblk1p1
+setenv edi_data_device /dev/mmcblk1p2
 setenv edi_root_device /dev/mmcblk1p${mender_boot_part}
 
 run findfdt

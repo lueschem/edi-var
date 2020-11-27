@@ -11,10 +11,26 @@
     - "{{ mender_config_directory }}/mender_custom.yml"
     - "{{ mender_config_directory }}/mender.yml"
 
-- name: Write mender main configuration.
+- name: Write mender main configurations.
   template:
     src: mender.conf
-    dest: /etc/mender/
+    dest: /etc/mender/mender.conf.{{ item.device }}
+  loop:
+    - { device: 'mmcblk2', partition_prefix: 'p' }
+    - { device: 'mmcblk1', partition_prefix: 'p' }
+
+- name: Copy the script that adjusts the mender configuration.
+  copy:
+    src: edi-adjust-mender
+    dest: /usr/bin/
+    mode: 0755
+    owner: root
+    group: root
+
+- name: Add a systemd service that triggers the adjustment of the mender configuration.
+  copy:
+    src: edi-adjust-mender.service
+    dest: /lib/systemd/system/
 
 - name: Create mender directory on data partition.
   file:
