@@ -1,7 +1,8 @@
 # edi Project Configuration for Variscite Boards
 
 This [edi](https://www.get-edi.io) project configuration currently supports the
-[Variscite var-som-mx8m-nano](https://www.variscite.com/product/system-on-module-som/cortex-a53-krait/var-som-mx8m-nano-nxp-i-mx-8m-nano/).
+[Variscite var-som-mx8m-nano](https://www.variscite.com/product/system-on-module-som/cortex-a53-krait/var-som-mx8m-nano-nxp-i-mx-8m-nano/)
+on the [Symphony-Board](https://www.variscite.com/product/single-board-computers/symphony-board/).
 
 ## Introduction
 
@@ -66,6 +67,31 @@ ssh variscite@IP_ADDRESS
 The password for the user _variscite_ is _variscite_ (just in case you want to
 execute a command using `sudo` or login via a local terminal).
 
+### Flashing the Image to the eMMC
+
+The same image that has been used for the SD card can also be flashed to the builtin eMMC as follows:
+
+Copy the image to the device that has been booted from the SD card:
+
+``` bash
+scp artifacts/var-som-mx8m-nano-bullseye-arm64.img variscite@IP_ADDRESS:
+```
+
+Access the device:
+
+``` bash
+ssh variscite@IP_ADDRESS
+```
+
+Flash the image to the eMMC (**Everything on mmcblk2 will be erased!**):
+
+``` bash
+sudo dd if=var-som-mx8m-nano-bullseye-arm64.img of=/dev/mmcblk2 bs=1M
+```
+
+Now you can switch the device off and toggle the "BOOT SELECT" switch from "SD" to "INT".
+When powering up the device again, it should boot the new image from the eMMC storage device.
+
 ### Connecting to Mender
 
 To enable over the air (OTA) updates, the generated images are configured
@@ -126,7 +152,10 @@ make latexpdf
 
 ### More Information
 
-For more information please read the [edi documentation](https://docs.get-edi.io) and
+For more information about the Variscite hardware please take a look at the
+[official documentation](https://variwiki.com/index.php?title=Debian_Build_Release&release=RELEASE_BULLSEYE_V1.0_VAR-SOM-MX8M-NANO).
+
+For more information about this setup please read the [edi documentation](https://docs.get-edi.io) and
 [this blog post](https://www.get-edi.io/A-new-Approach-to-Operating-System-Image-Generation/).
 
 For details about the Mender based robust update integration please refer to this
@@ -134,3 +163,5 @@ For details about the Mender based robust update integration please refer to thi
 
 If you are curious about the U-Boot bootloader setup please take a look at this
 [blog post](https://www.get-edi.io/Booting-Debian-with-U-Boot/).
+
+For the kernel build instructions please check the [docs folder of this project](docs/kernel_build.md).
