@@ -5,57 +5,52 @@
   status: ii 
 - package: apt
   architecture: arm64
-  version: "1.8.2"
+  version: "2.1.12"
   source_package: apt
   status: ii 
 - package: base-files
   architecture: arm64
-  version: "10.3+deb10u2"
+  version: "11"
   source_package: base-files
   status: ii 
 - package: base-passwd
   architecture: arm64
-  version: "3.5.46"
+  version: "3.5.48"
   source_package: base-passwd
   status: ii 
 - package: bash
   architecture: arm64
-  version: "5.0-4"
+  version: "5.1~rc3-1"
   source_package: bash
   status: ii 
 - package: bsdutils
   architecture: arm64
-  version: "1:2.33.1-0.1"
+  version: "1:2.36.1-2"
   source_package: util-linux
   status: ii 
 - package: ca-certificates
   architecture: all
-  version: "20190110"
+  version: "20200601"
   source_package: ca-certificates
   status: ii 
 - package: coreutils
   architecture: arm64
-  version: "8.30-3"
+  version: "8.32-4"
   source_package: coreutils
   status: ii 
 - package: cpio
   architecture: arm64
-  version: "2.12+dfsg-9"
+  version: "2.13+dfsg-4"
   source_package: cpio
   status: ii 
 - package: dash
   architecture: arm64
-  version: "0.5.10.2-5"
+  version: "0.5.11+git20200708+dd9ef66-2"
   source_package: dash
-  status: ii 
-- package: dbus
-  architecture: arm64
-  version: "1.12.16-1"
-  source_package: dbus
   status: ii 
 - package: debconf
   architecture: all
-  version: "1.5.71"
+  version: "1.5.74"
   source_package: debconf
   status: ii 
 - package: debian-archive-keyring
@@ -65,7 +60,7 @@
   status: ii 
 - package: debianutils
   architecture: arm64
-  version: "4.8.6.1"
+  version: "4.11.2"
   source_package: debianutils
   status: ii 
 - package: diffutils
@@ -75,202 +70,182 @@
   status: ii 
 - package: dirmngr
   architecture: arm64
-  version: "2.2.12-1+deb10u1"
+  version: "2.2.20-1"
   source_package: gnupg2
   status: ii 
 - package: distro-info-data
   architecture: all
-  version: "0.41+deb10u1"
+  version: "0.45"
   source_package: distro-info-data
   status: ii 
 - package: dmsetup
   architecture: arm64
-  version: "2:1.02.155-3"
+  version: "2:1.02.173-1"
   source_package: lvm2
-  status: ii 
-- package: dosfstools
-  architecture: arm64
-  version: "4.1-2"
-  source_package: dosfstools
   status: ii 
 - package: dpkg
   architecture: arm64
-  version: "1.19.7"
+  version: "1.20.5"
   source_package: dpkg
   status: ii 
 - package: dumb-init
   architecture: arm64
-  version: "1.2.2-1.1"
+  version: "1.2.2-1.2"
   source_package: dumb-init
   status: ii 
 - package: e2fsprogs
   architecture: arm64
-  version: "1.44.5-1+deb10u2"
+  version: "1.45.6-1"
   source_package: e2fsprogs
   status: ii 
 - package: edi-boot-shim
   architecture: all
-  version: "0.8.0+deb10"
+  version: "0.11.0+deb11"
   source_package: edi-boot-shim
   status: ii 
 - package: fdisk
   architecture: arm64
-  version: "2.33.1-0.1"
+  version: "2.36.1-2"
   source_package: util-linux
   status: ii 
 - package: findutils
   architecture: arm64
-  version: "4.6.0+git+20190209-2"
+  version: "4.7.0+git20201010-2"
   source_package: findutils
   status: ii 
-- package: firmware-brcm80211
-  architecture: all
-  version: "1:20190114-1+rpt4"
-  source_package: firmware-nonfree
-  status: ii 
-- package: gcc-8-base
+- package: gcc-10-base
   architecture: arm64
-  version: "8.3.0-6"
-  source_package: gcc-8
+  version: "10.2.0-19"
+  source_package: gcc-10
+  status: ii 
+- package: gcc-9-base
+  architecture: arm64
+  version: "9.3.0-19"
+  source_package: gcc-9
   status: ii 
 - package: gnupg
   architecture: all
-  version: "2.2.12-1+deb10u1"
+  version: "2.2.20-1"
   source_package: gnupg2
   status: ii 
 - package: gnupg-l10n
   architecture: all
-  version: "2.2.12-1+deb10u1"
+  version: "2.2.20-1"
   source_package: gnupg2
   status: ii 
 - package: gnupg-utils
   architecture: arm64
-  version: "2.2.12-1+deb10u1"
+  version: "2.2.20-1"
   source_package: gnupg2
   status: ii 
 - package: gpg
   architecture: arm64
-  version: "2.2.12-1+deb10u1"
+  version: "2.2.20-1"
   source_package: gnupg2
   status: ii 
 - package: gpg-agent
   architecture: arm64
-  version: "2.2.12-1+deb10u1"
+  version: "2.2.20-1"
   source_package: gnupg2
   status: ii 
 - package: gpg-wks-client
   architecture: arm64
-  version: "2.2.12-1+deb10u1"
+  version: "2.2.20-1"
   source_package: gnupg2
   status: ii 
 - package: gpg-wks-server
   architecture: arm64
-  version: "2.2.12-1+deb10u1"
+  version: "2.2.20-1"
   source_package: gnupg2
   status: ii 
 - package: gpgconf
   architecture: arm64
-  version: "2.2.12-1+deb10u1"
+  version: "2.2.20-1"
   source_package: gnupg2
   status: ii 
 - package: gpgsm
   architecture: arm64
-  version: "2.2.12-1+deb10u1"
+  version: "2.2.20-1"
   source_package: gnupg2
   status: ii 
 - package: gpgv
   architecture: arm64
-  version: "2.2.12-1+deb10u1"
+  version: "2.2.20-1"
   source_package: gnupg2
   status: ii 
 - package: grep
   architecture: arm64
-  version: "3.3-1"
+  version: "3.6-1"
   source_package: grep
   status: ii 
 - package: gzip
   architecture: arm64
-  version: "1.9-3"
+  version: "1.10-2"
   source_package: gzip
-  status: ii 
-- package: haveged
-  architecture: arm64
-  version: "1.9.1-7"
-  source_package: haveged
   status: ii 
 - package: hostname
   architecture: arm64
-  version: "3.21"
+  version: "3.23"
   source_package: hostname
   status: ii 
 - package: ifupdown
   architecture: arm64
-  version: "0.8.35"
+  version: "0.8.36"
   source_package: ifupdown
   status: ii 
 - package: init-system-helpers
   architecture: all
-  version: "1.56+nmu1"
+  version: "1.59"
   source_package: init-system-helpers
   status: ii 
 - package: initramfs-tools
   architecture: all
-  version: "0.133+deb10u1"
+  version: "0.139"
   source_package: initramfs-tools
   status: ii 
 - package: initramfs-tools-core
   architecture: all
-  version: "0.133+deb10u1"
+  version: "0.139"
   source_package: initramfs-tools
   status: ii 
 - package: iproute2
   architecture: arm64
-  version: "4.20.0-2"
+  version: "5.9.0-1"
   source_package: iproute2
   status: ii 
 - package: iputils-ping
   architecture: arm64
-  version: "3:20180629-2"
+  version: "3:20200821-2"
   source_package: iputils
   status: ii 
 - package: isc-dhcp-client
   architecture: arm64
-  version: "4.4.1-2"
+  version: "4.4.1-2.2"
   source_package: isc-dhcp
-  status: ii 
-- package: iso-codes
-  architecture: all
-  version: "4.2-1"
-  source_package: iso-codes
   status: ii 
 - package: klibc-utils
   architecture: arm64
-  version: "2.0.6-1"
+  version: "2.0.8-1"
   source_package: klibc
   status: ii 
 - package: kmod
   architecture: arm64
-  version: "26-1"
+  version: "27+20200310-2"
   source_package: kmod
   status: ii 
 - package: libacl1
   architecture: arm64
-  version: "2.2.53-4"
+  version: "2.2.53-8"
   source_package: acl
   status: ii 
 - package: libapparmor1
   architecture: arm64
-  version: "2.13.2-10"
+  version: "2.13.5-1+b2"
   source_package: apparmor
   status: ii 
-- package: libapt-inst2.0
+- package: libapt-pkg6.0
   architecture: arm64
-  version: "1.8.2"
-  source_package: apt
-  status: ii 
-- package: libapt-pkg5.0
-  architecture: arm64
-  version: "1.8.2"
+  version: "2.1.12"
   source_package: apt
   status: ii 
 - package: libargon2-1
@@ -280,307 +255,292 @@
   status: ii 
 - package: libassuan0
   architecture: arm64
-  version: "2.5.2-1"
+  version: "2.5.3-7.1"
   source_package: libassuan
   status: ii 
 - package: libattr1
   architecture: arm64
-  version: "1:2.4.48-4"
+  version: "1:2.4.48-5"
   source_package: attr
   status: ii 
 - package: libaudit-common
   architecture: all
-  version: "1:2.8.4-3"
+  version: "1:2.8.5-3.1"
   source_package: audit
   status: ii 
 - package: libaudit1
   architecture: arm64
-  version: "1:2.8.4-3"
+  version: "1:2.8.5-3.1+b1"
   source_package: audit
   status: ii 
 - package: libblkid1
   architecture: arm64
-  version: "2.33.1-0.1"
+  version: "2.36.1-2"
   source_package: util-linux
   status: ii 
 - package: libbsd0
   architecture: arm64
-  version: "0.9.1-2"
+  version: "0.10.0-1"
   source_package: libbsd
   status: ii 
 - package: libbz2-1.0
   architecture: arm64
-  version: "1.0.6-9.2~deb10u1"
+  version: "1.0.8-4"
   source_package: bzip2
   status: ii 
 - package: libc-bin
   architecture: arm64
-  version: "2.28-10"
+  version: "2.31-5"
   source_package: glibc
   status: ii 
 - package: libc6
   architecture: arm64
-  version: "2.28-10"
+  version: "2.31-5"
   source_package: glibc
   status: ii 
 - package: libcap-ng0
   architecture: arm64
-  version: "0.7.9-2"
+  version: "0.7.9-2.2+b1"
   source_package: libcap-ng
   status: ii 
 - package: libcap2
   architecture: arm64
-  version: "1:2.25-2"
+  version: "1:2.44-1"
   source_package: libcap2
   status: ii 
 - package: libcap2-bin
   architecture: arm64
-  version: "1:2.25-2"
+  version: "1:2.44-1"
   source_package: libcap2
+  status: ii 
+- package: libcbor0
+  architecture: arm64
+  version: "0.5.0+dfsg-2"
+  source_package: libcbor
   status: ii 
 - package: libcom-err2
   architecture: arm64
-  version: "1.44.5-1+deb10u2"
+  version: "1.45.6-1"
   source_package: e2fsprogs
+  status: ii 
+- package: libcrypt1
+  architecture: arm64
+  version: "1:4.4.17-1"
+  source_package: libxcrypt
   status: ii 
 - package: libcryptsetup12
   architecture: arm64
-  version: "2:2.1.0-5+deb10u2"
+  version: "2:2.3.4-1"
   source_package: cryptsetup
   status: ii 
 - package: libdb5.3
   architecture: arm64
-  version: "5.3.28+dfsg1-0.5"
+  version: "5.3.28+dfsg1-0.6"
   source_package: db5.3
-  status: ii 
-- package: libdbus-1-3
-  architecture: arm64
-  version: "1.12.16-1"
-  source_package: dbus
   status: ii 
 - package: libdebconfclient0
   architecture: arm64
-  version: "0.249"
+  version: "0.255"
   source_package: cdebconf
   status: ii 
 - package: libdevmapper1.02.1
   architecture: arm64
-  version: "2:1.02.155-3"
+  version: "2:1.02.173-1"
   source_package: lvm2
   status: ii 
-- package: libdns-export1104
+- package: libdns-export1110
   architecture: arm64
-  version: "1:9.11.5.P4+dfsg-5.1"
-  source_package: bind9
+  version: "1:9.11.19+dfsg-1"
+  source_package: bind9-libs
   status: ii 
 - package: libedit2
   architecture: arm64
-  version: "3.1-20181209-1"
+  version: "3.1-20191231-1"
   source_package: libedit
   status: ii 
 - package: libelf1
   architecture: arm64
-  version: "0.176-1.1"
+  version: "0.182-1"
   source_package: elfutils
   status: ii 
 - package: libexpat1
   architecture: arm64
-  version: "2.2.6-2+deb10u1"
+  version: "2.2.10-1"
   source_package: expat
   status: ii 
 - package: libext2fs2
   architecture: arm64
-  version: "1.44.5-1+deb10u2"
+  version: "1.45.6-1"
   source_package: e2fsprogs
   status: ii 
 - package: libfdisk1
   architecture: arm64
-  version: "2.33.1-0.1"
+  version: "2.36.1-2"
   source_package: util-linux
   status: ii 
-- package: libffi6
+- package: libffi7
   architecture: arm64
-  version: "3.2.1-9"
+  version: "3.3-5"
   source_package: libffi
   status: ii 
-- package: libgcc1
+- package: libfido2-1
   architecture: arm64
-  version: "1:8.3.0-6"
-  source_package: gcc-8
+  version: "1.5.0-2"
+  source_package: libfido2
+  status: ii 
+- package: libgcc-s1
+  architecture: arm64
+  version: "10.2.0-19"
+  source_package: gcc-10
   status: ii 
 - package: libgcrypt20
   architecture: arm64
-  version: "1.8.4-5"
+  version: "1.8.7-2"
   source_package: libgcrypt20
+  status: ii 
+- package: libgdbm-compat4
+  architecture: arm64
+  version: "1.18.1-5.1"
+  source_package: gdbm
+  status: ii 
+- package: libgdbm6
+  architecture: arm64
+  version: "1.18.1-5.1"
+  source_package: gdbm
   status: ii 
 - package: libgmp10
   architecture: arm64
-  version: "2:6.1.2+dfsg-4"
+  version: "2:6.2.1+dfsg-1"
   source_package: gmp
   status: ii 
 - package: libgnutls30
   architecture: arm64
-  version: "3.6.7-4"
+  version: "3.6.15-4"
   source_package: gnutls28
   status: ii 
 - package: libgpg-error0
   architecture: arm64
-  version: "1.35-1"
+  version: "1.38-2"
   source_package: libgpg-error
   status: ii 
 - package: libgssapi-krb5-2
   architecture: arm64
-  version: "1.17-3"
+  version: "1.18.3-4"
   source_package: krb5
   status: ii 
-- package: libhavege1
+- package: libhogweed6
   architecture: arm64
-  version: "1.9.1-7"
-  source_package: haveged
-  status: ii 
-- package: libhogweed4
-  architecture: arm64
-  version: "3.4.1-1"
+  version: "3.6-2"
   source_package: nettle
-  status: ii 
-- package: libidn11
-  architecture: arm64
-  version: "1.33-2.2"
-  source_package: libidn
   status: ii 
 - package: libidn2-0
   architecture: arm64
-  version: "2.0.5-1"
+  version: "2.3.0-4"
   source_package: libidn2
   status: ii 
-- package: libip4tc0
+- package: libip4tc2
   architecture: arm64
-  version: "1.8.2-4"
+  version: "1.8.6-1"
   source_package: iptables
   status: ii 
-- package: libisc-export1100
+- package: libisc-export1105
   architecture: arm64
-  version: "1:9.11.5.P4+dfsg-5.1"
-  source_package: bind9
+  version: "1:9.11.19+dfsg-1"
+  source_package: bind9-libs
   status: ii 
-- package: libiw30
+- package: libjson-c5
   architecture: arm64
-  version: "30~pre9-13"
-  source_package: wireless-tools
-  status: ii 
-- package: libjson-c3
-  architecture: arm64
-  version: "0.12.1+ds-2"
+  version: "0.15-1"
   source_package: json-c
   status: ii 
 - package: libk5crypto3
   architecture: arm64
-  version: "1.17-3"
+  version: "1.18.3-4"
   source_package: krb5
   status: ii 
 - package: libkeyutils1
   architecture: arm64
-  version: "1.6-6"
+  version: "1.6.1-2"
   source_package: keyutils
   status: ii 
 - package: libklibc
   architecture: arm64
-  version: "2.0.6-1"
+  version: "2.0.8-1"
   source_package: klibc
   status: ii 
 - package: libkmod2
   architecture: arm64
-  version: "26-1"
+  version: "27+20200310-2"
   source_package: kmod
   status: ii 
 - package: libkrb5-3
   architecture: arm64
-  version: "1.17-3"
+  version: "1.18.3-4"
   source_package: krb5
   status: ii 
 - package: libkrb5support0
   architecture: arm64
-  version: "1.17-3"
+  version: "1.18.3-4"
   source_package: krb5
   status: ii 
 - package: libksba8
   architecture: arm64
-  version: "1.3.5-2"
+  version: "1.5.0-2"
   source_package: libksba
   status: ii 
 - package: libldap-2.4-2
   architecture: arm64
-  version: "2.4.47+dfsg-3+deb10u1"
-  source_package: openldap
-  status: ii 
-- package: libldap-common
-  architecture: all
-  version: "2.4.47+dfsg-3+deb10u1"
+  version: "2.4.56+dfsg-1"
   source_package: openldap
   status: ii 
 - package: liblz4-1
   architecture: arm64
-  version: "1.8.3-1"
+  version: "1.9.2-2"
   source_package: lz4
   status: ii 
 - package: liblzma5
   architecture: arm64
-  version: "5.2.4-1"
+  version: "5.2.4-1+b1"
   source_package: xz-utils
   status: ii 
 - package: libmnl0
   architecture: arm64
-  version: "1.0.4-2"
+  version: "1.0.4-3"
   source_package: libmnl
   status: ii 
 - package: libmount1
   architecture: arm64
-  version: "2.33.1-0.1"
+  version: "2.36.1-2"
   source_package: util-linux
-  status: ii 
-- package: libmpdec2
-  architecture: arm64
-  version: "2.4.2-2"
-  source_package: mpdecimal
   status: ii 
 - package: libncurses6
   architecture: arm64
-  version: "6.1+20181013-2+deb10u2"
+  version: "6.2+20201114-1"
   source_package: ncurses
   status: ii 
 - package: libncursesw6
   architecture: arm64
-  version: "6.1+20181013-2+deb10u2"
+  version: "6.2+20201114-1"
   source_package: ncurses
   status: ii 
-- package: libnettle6
+- package: libnettle8
   architecture: arm64
-  version: "3.4.1-1"
+  version: "3.6-2"
   source_package: nettle
-  status: ii 
-- package: libnl-3-200
-  architecture: arm64
-  version: "3.4.0-1"
-  source_package: libnl3
-  status: ii 
-- package: libnl-genl-3-200
-  architecture: arm64
-  version: "3.4.0-1"
-  source_package: libnl3
-  status: ii 
-- package: libnl-route-3-200
-  architecture: arm64
-  version: "3.4.0-1"
-  source_package: libnl3
   status: ii 
 - package: libnpth0
   architecture: arm64
-  version: "1.6-1"
+  version: "1.6-3"
   source_package: npth
+  status: ii 
+- package: libnsl2
+  architecture: arm64
+  version: "1.3.0-2"
+  source_package: libnsl
   status: ii 
 - package: libp11-kit0
   architecture: arm64
-  version: "0.23.15-2"
+  version: "0.23.21-2"
   source_package: p11-kit
   status: ii 
 - package: libpam-modules
@@ -605,167 +565,172 @@
   status: ii 
 - package: libparted2
   architecture: arm64
-  version: "3.2-25"
+  version: "3.3-4"
   source_package: parted
+  status: ii 
+- package: libpcre2-8-0
+  architecture: arm64
+  version: "10.35-2"
+  source_package: pcre2
   status: ii 
 - package: libpcre3
   architecture: arm64
-  version: "2:8.39-12"
+  version: "2:8.39-13"
   source_package: pcre3
   status: ii 
-- package: libpcsclite1
+- package: libperl5.32
   architecture: arm64
-  version: "1.8.24-1"
-  source_package: pcsc-lite
+  version: "5.32.0-5"
+  source_package: perl
   status: ii 
-- package: libprocps7
+- package: libprocps8
   architecture: arm64
-  version: "2:3.3.15-2"
+  version: "2:3.3.16-5"
   source_package: procps
-  status: ii 
-- package: libpython-stdlib
-  architecture: arm64
-  version: "2.7.16-1"
-  source_package: python-defaults
-  status: ii 
-- package: libpython2-stdlib
-  architecture: arm64
-  version: "2.7.16-1"
-  source_package: python-defaults
-  status: ii 
-- package: libpython2.7-minimal
-  architecture: arm64
-  version: "2.7.16-2+deb10u1"
-  source_package: python2.7
-  status: ii 
-- package: libpython2.7-stdlib
-  architecture: arm64
-  version: "2.7.16-2+deb10u1"
-  source_package: python2.7
   status: ii 
 - package: libpython3-stdlib
   architecture: arm64
-  version: "3.7.3-1"
+  version: "3.9.0-4"
   source_package: python3-defaults
   status: ii 
-- package: libpython3.7-minimal
+- package: libpython3.9-minimal
   architecture: arm64
-  version: "3.7.3-2"
-  source_package: python3.7
+  version: "3.9.1-1"
+  source_package: python3.9
   status: ii 
-- package: libpython3.7-stdlib
+- package: libpython3.9-stdlib
   architecture: arm64
-  version: "3.7.3-2"
-  source_package: python3.7
+  version: "3.9.1-1"
+  source_package: python3.9
   status: ii 
-- package: libreadline7
+- package: libreadline8
   architecture: arm64
-  version: "7.0-5"
+  version: "8.1~rc3-1"
   source_package: readline
   status: ii 
 - package: libsasl2-2
   architecture: arm64
-  version: "2.1.27+dfsg-1"
+  version: "2.1.27+dfsg-2"
   source_package: cyrus-sasl2
   status: ii 
 - package: libsasl2-modules-db
   architecture: arm64
-  version: "2.1.27+dfsg-1"
+  version: "2.1.27+dfsg-2"
   source_package: cyrus-sasl2
   status: ii 
 - package: libseccomp2
   architecture: arm64
-  version: "2.3.3-4"
+  version: "2.5.0-3+b1"
   source_package: libseccomp
   status: ii 
 - package: libselinux1
   architecture: arm64
-  version: "2.8-1+b1"
+  version: "3.1-2+b2"
   source_package: libselinux
   status: ii 
 - package: libsemanage-common
   architecture: all
-  version: "2.8-2"
+  version: "3.1-1"
   source_package: libsemanage
   status: ii 
 - package: libsemanage1
   architecture: arm64
-  version: "2.8-2"
+  version: "3.1-1+b2"
   source_package: libsemanage
   status: ii 
 - package: libsepol1
   architecture: arm64
-  version: "2.8-1"
+  version: "3.1-1"
   source_package: libsepol
   status: ii 
 - package: libsmartcols1
   architecture: arm64
-  version: "2.33.1-0.1"
+  version: "2.36.1-2"
   source_package: util-linux
   status: ii 
 - package: libsqlite3-0
   architecture: arm64
-  version: "3.27.2-3"
+  version: "3.34.0-1"
   source_package: sqlite3
   status: ii 
 - package: libss2
   architecture: arm64
-  version: "1.44.5-1+deb10u2"
+  version: "1.45.6-1"
   source_package: e2fsprogs
   status: ii 
 - package: libssl1.1
   architecture: arm64
-  version: "1.1.1d-0+deb10u2"
+  version: "1.1.1h-1"
   source_package: openssl
   status: ii 
 - package: libstdc++6
   architecture: arm64
-  version: "8.3.0-6"
-  source_package: gcc-8
+  version: "10.2.0-19"
+  source_package: gcc-10
   status: ii 
 - package: libsystemd0
   architecture: arm64
-  version: "241-7~deb10u2"
+  version: "247.1-3"
   source_package: systemd
   status: ii 
 - package: libtasn1-6
   architecture: arm64
-  version: "4.13-3"
+  version: "4.16.0-2"
   source_package: libtasn1-6
   status: ii 
 - package: libtinfo6
   architecture: arm64
-  version: "6.1+20181013-2+deb10u2"
+  version: "6.2+20201114-1"
   source_package: ncurses
+  status: ii 
+- package: libtirpc-common
+  architecture: all
+  version: "1.2.6-3"
+  source_package: libtirpc
+  status: ii 
+- package: libtirpc3
+  architecture: arm64
+  version: "1.2.6-3"
+  source_package: libtirpc
+  status: ii 
+- package: libubootenv-tool
+  architecture: arm64
+  version: "0.3-1"
+  source_package: libubootenv
+  status: ii 
+- package: libubootenv0.1
+  architecture: arm64
+  version: "0.3-1"
+  source_package: libubootenv
   status: ii 
 - package: libudev1
   architecture: arm64
-  version: "241-7~deb10u2"
+  version: "247.1-3"
   source_package: systemd
   status: ii 
 - package: libunistring2
   architecture: arm64
-  version: "0.9.10-1"
+  version: "0.9.10-4"
   source_package: libunistring
   status: ii 
 - package: libuuid1
   architecture: arm64
-  version: "2.33.1-0.1"
+  version: "2.36.1-2"
   source_package: util-linux
   status: ii 
 - package: libwrap0
   architecture: arm64
-  version: "7.6.q-28"
+  version: "7.6.q-31"
   source_package: tcp-wrappers
   status: ii 
 - package: libxtables12
   architecture: arm64
-  version: "1.8.2-4"
+  version: "1.8.6-1"
   source_package: iptables
   status: ii 
 - package: libzstd1
   architecture: arm64
-  version: "1.3.8+dfsg-3"
+  version: "1.4.5+dfsg-4"
   source_package: libzstd
   status: ii 
 - package: linux-base
@@ -773,180 +738,175 @@
   version: "4.6"
   source_package: linux-base
   status: ii 
-- package: linux-image-4.19.93-v8+
+- package: linux-image-5.4.24-ge3d73e92f28e
   architecture: arm64
-  version: "4.19.93-v8+-1"
-  source_package: linux-4.19.93-v8+
+  version: "5.4.24-ge3d73e92f28e-1"
+  source_package: linux-5.4.24-ge3d73e92f28e
   status: ii 
 - package: login
   architecture: arm64
-  version: "1:4.5-1.1"
+  version: "1:4.8.1-1"
   source_package: shadow
+  status: ii 
+- package: logsave
+  architecture: arm64
+  version: "1.45.6-1"
+  source_package: e2fsprogs
   status: ii 
 - package: lsb-base
   architecture: all
-  version: "10.2019051400"
+  version: "11.1.0"
   source_package: lsb
   status: ii 
-- package: lsb-release
+- package: mailcap
   architecture: all
-  version: "10.2019051400"
-  source_package: lsb
+  version: "3.67"
+  source_package: mailcap
   status: ii 
 - package: mawk
   architecture: arm64
-  version: "1.3.3-17+b3"
+  version: "1.3.4.20200120-2"
   source_package: mawk
+  status: ii 
+- package: media-types
+  architecture: all
+  version: "1.0.1"
+  source_package: media-types
   status: ii 
 - package: mender-client
   architecture: arm64
-  version: "1.7.0-4+b12"
+  version: "2.3.0-1"
   source_package: mender-client
   status: ii 
 - package: mime-support
   architecture: all
-  version: "3.62"
+  version: "3.66"
   source_package: mime-support
   status: ii 
 - package: mount
   architecture: arm64
-  version: "2.33.1-0.1"
+  version: "2.36.1-2"
   source_package: util-linux
   status: ii 
 - package: ncurses-base
   architecture: all
-  version: "6.1+20181013-2+deb10u2"
+  version: "6.2+20201114-1"
   source_package: ncurses
   status: ii 
 - package: ncurses-bin
   architecture: arm64
-  version: "6.1+20181013-2+deb10u2"
+  version: "6.2+20201114-1"
   source_package: ncurses
   status: ii 
 - package: net-tools
   architecture: arm64
-  version: "1.60+git20180626.aebd88e-1"
+  version: "1.60+git20181103.0eebece-1"
   source_package: net-tools
   status: ii 
 - package: netbase
   architecture: all
-  version: "5.6"
+  version: "6.2"
   source_package: netbase
   status: ii 
 - package: openssh-client
   architecture: arm64
-  version: "1:7.9p1-10+deb10u1"
+  version: "1:8.4p1-3"
   source_package: openssh
   status: ii 
 - package: openssh-server
   architecture: arm64
-  version: "1:7.9p1-10+deb10u1"
+  version: "1:8.4p1-3"
   source_package: openssh
   status: ii 
 - package: openssh-sftp-server
   architecture: arm64
-  version: "1:7.9p1-10+deb10u1"
+  version: "1:8.4p1-3"
   source_package: openssh
   status: ii 
 - package: openssl
   architecture: arm64
-  version: "1.1.1d-0+deb10u2"
+  version: "1.1.1h-1"
   source_package: openssl
   status: ii 
 - package: parted
   architecture: arm64
-  version: "3.2-25"
+  version: "3.3-4"
   source_package: parted
   status: ii 
 - package: passwd
   architecture: arm64
-  version: "1:4.5-1.1"
+  version: "1:4.8.1-1"
   source_package: shadow
+  status: ii 
+- package: perl
+  architecture: arm64
+  version: "5.32.0-5"
+  source_package: perl
   status: ii 
 - package: perl-base
   architecture: arm64
-  version: "5.28.1-6"
+  version: "5.32.0-5"
+  source_package: perl
+  status: ii 
+- package: perl-modules-5.32
+  architecture: all
+  version: "5.32.0-5"
   source_package: perl
   status: ii 
 - package: pinentry-curses
   architecture: arm64
-  version: "1.1.0-2"
+  version: "1.1.0-4"
   source_package: pinentry
   status: ii 
 - package: procps
   architecture: arm64
-  version: "2:3.3.15-2"
+  version: "2:3.3.16-5"
   source_package: procps
-  status: ii 
-- package: python
-  architecture: arm64
-  version: "2.7.16-1"
-  source_package: python-defaults
-  status: ii 
-- package: python-apt
-  architecture: arm64
-  version: "1.8.4"
-  source_package: python-apt
   status: ii 
 - package: python-apt-common
   architecture: all
-  version: "1.8.4"
+  version: "2.1.6"
   source_package: python-apt
-  status: ii 
-- package: python-minimal
-  architecture: arm64
-  version: "2.7.16-1"
-  source_package: python-defaults
-  status: ii 
-- package: python2
-  architecture: arm64
-  version: "2.7.16-1"
-  source_package: python-defaults
-  status: ii 
-- package: python2-minimal
-  architecture: arm64
-  version: "2.7.16-1"
-  source_package: python-defaults
-  status: ii 
-- package: python2.7
-  architecture: arm64
-  version: "2.7.16-2+deb10u1"
-  source_package: python2.7
-  status: ii 
-- package: python2.7-minimal
-  architecture: arm64
-  version: "2.7.16-2+deb10u1"
-  source_package: python2.7
   status: ii 
 - package: python3
   architecture: arm64
-  version: "3.7.3-1"
+  version: "3.9.0-4"
   source_package: python3-defaults
+  status: ii 
+- package: python3-apt
+  architecture: arm64
+  version: "2.1.6+b1"
+  source_package: python-apt
   status: ii 
 - package: python3-minimal
   architecture: arm64
-  version: "3.7.3-1"
+  version: "3.9.0-4"
   source_package: python3-defaults
   status: ii 
-- package: python3.7
+- package: python3.9
   architecture: arm64
-  version: "3.7.3-2"
-  source_package: python3.7
+  version: "3.9.1-1"
+  source_package: python3.9
   status: ii 
-- package: python3.7-minimal
+- package: python3.9-minimal
   architecture: arm64
-  version: "3.7.3-2"
-  source_package: python3.7
+  version: "3.9.1-1"
+  source_package: python3.9
   status: ii 
 - package: readline-common
   architecture: all
-  version: "7.0-5"
+  version: "8.1~rc3-1"
   source_package: readline
   status: ii 
 - package: resolvconf
   architecture: all
-  version: "1.79"
+  version: "1.84"
   source_package: resolvconf
+  status: ii 
+- package: runit-helper
+  architecture: all
+  version: "2.10.2"
+  source_package: dh-runit
   status: ii 
 - package: sed
   architecture: arm64
@@ -955,76 +915,66 @@
   status: ii 
 - package: sensible-utils
   architecture: all
-  version: "0.0.12"
+  version: "0.0.12+nmu1"
   source_package: sensible-utils
   status: ii 
 - package: sudo
   architecture: arm64
-  version: "1.8.27-1+deb10u1"
+  version: "1.9.4-1"
   source_package: sudo
   status: ii 
 - package: systemd
   architecture: arm64
-  version: "241-7~deb10u2"
+  version: "247.1-3"
   source_package: systemd
   status: ii 
 - package: systemd-sysv
   architecture: arm64
-  version: "241-7~deb10u2"
+  version: "247.1-3"
+  source_package: systemd
+  status: ii 
+- package: systemd-timesyncd
+  architecture: arm64
+  version: "247.1-3"
   source_package: systemd
   status: ii 
 - package: sysvinit-utils
   architecture: arm64
-  version: "2.93-8"
+  version: "2.96-5"
   source_package: sysvinit
   status: ii 
 - package: tar
   architecture: arm64
-  version: "1.30+dfsg-6"
+  version: "1.32+dfsg-1"
   source_package: tar
   status: ii 
 - package: tzdata
   architecture: all
-  version: "2019c-0+deb10u1"
+  version: "2020d-1"
   source_package: tzdata
   status: ii 
 - package: u-boot-tools
   architecture: arm64
-  version: "2019.01+dfsg-7"
+  version: "2020.10+dfsg-1+b1"
   source_package: u-boot
   status: ii 
 - package: ucf
   architecture: all
-  version: "3.0038+nmu1"
+  version: "3.0043"
   source_package: ucf
   status: ii 
 - package: udev
   architecture: arm64
-  version: "241-7~deb10u2"
+  version: "247.1-3"
   source_package: systemd
   status: ii 
 - package: util-linux
   architecture: arm64
-  version: "2.33.1-0.1"
+  version: "2.36.1-2"
   source_package: util-linux
-  status: ii 
-- package: wireless-tools
-  architecture: arm64
-  version: "30~pre9-13"
-  source_package: wireless-tools
-  status: ii 
-- package: wpasupplicant
-  architecture: arm64
-  version: "2:2.7+git20190128+0c1e29f-6+deb10u1"
-  source_package: wpa
-  status: ii 
-- package: xz-utils
-  architecture: arm64
-  version: "5.2.4-1"
-  source_package: xz-utils
   status: ii 
 - package: zlib1g
   architecture: arm64
-  version: "1:1.2.11.dfsg-1"
+  version: "1:1.2.11.dfsg-2"
   source_package: zlib
   status: ii 
