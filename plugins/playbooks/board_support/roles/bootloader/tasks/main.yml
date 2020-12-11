@@ -72,3 +72,9 @@
     - data.mount
     - boot-firmware.mount
 
+- name: Add helper script that removes debug output from fw_printenv.
+  copy:
+    src: fw_printenv
+    dest: /usr/sbin/
+    mode: 0755
+
