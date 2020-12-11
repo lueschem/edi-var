@@ -5,7 +5,6 @@ general:
     edi_lxc_bridge_interface_name: edibr0
     parameters:
         ansible_pipelining: true
-        ansible_python_interpreter: /usr/bin/python3
 
 bootstrap:
     tool: debootstrap
