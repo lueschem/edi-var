@@ -1,0 +1,10 @@
+[Unit]
+Description=Adjust u-boot configuration according to boot device
+Before=mender-client.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/edi-adjust-uboot
+
+[Install]
+WantedBy=mender-client.service

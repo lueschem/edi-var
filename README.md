@@ -8,7 +8,7 @@ This [edi](https://www.get-edi.io) project configuration currently supports the
 The edi configuration contained in this repository can be used to
 generate the following artifacts:
 
-* A Debian bullseye arm64 (64bit) image suitable for the Variscite var-som-mx8m-nano.
+* A **minimal** (e.g. no display, no sound) Debian bullseye arm64 (64bit) image suitable for the Variscite var-som-mx8m-nano.
 * A matching Mender update artifacts for the above configuration.
 * An amd64/arm64 based LXD container with a pre-installed
 cross development toolchain for C and C++.
@@ -65,8 +65,6 @@ ssh variscite@IP_ADDRESS
 
 The password for the user _variscite_ is _variscite_ (just in case you want to
 execute a command using `sudo` or login via a local terminal).
-
-**Important: Do not flash the generated image to the eMMC yet - u-boot is missing!**
 
 ### Connecting to Mender
 

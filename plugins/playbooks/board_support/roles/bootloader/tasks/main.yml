@@ -39,15 +39,25 @@
     state: directory
 
 - name: Configure u-boot-tools.
-  copy:
+  template:
     src: fw_env.config
-    dest: /data/u-boot
+    dest: /data/u-boot/fw_env.config.{{ item }}
+  loop:
+    - mmcblk1
+    - mmcblk2
 
-- name: Create symbolic link for the u-boot-tools config.
-  file:
-    src: "/data/u-boot/fw_env.config"
-    dest: "/etc/fw_env.config"
-    state: link
+- name: Copy the script that adjusts the u-boot configuration.
+  copy:
+    src: edi-adjust-uboot
+    dest: /usr/bin/
+    mode: 0755
+    owner: root
+    group: root
+
+- name: Add a systemd service that triggers the adjustment of the u-boot configuration.
+  copy:
+    src: edi-adjust-uboot.service
+    dest: /lib/systemd/system/
 
 - name: Copy fstab.
   copy:
