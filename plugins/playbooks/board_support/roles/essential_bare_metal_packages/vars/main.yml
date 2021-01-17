@@ -2,7 +2,6 @@
 bare_metal_packages:
   - fdisk
   - initramfs-tools
-  - libubootenv-tool
   - udev
   - "{{ kernel_image }}"
 
