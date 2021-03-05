@@ -4,6 +4,9 @@ This [edi](https://www.get-edi.io) project configuration currently supports the
 [Variscite var-som-mx8m-nano](https://www.variscite.com/product/system-on-module-som/cortex-a53-krait/var-som-mx8m-nano-nxp-i-mx-8m-nano/)
 on the [Symphony-Board](https://www.variscite.com/product/single-board-computers/symphony-board/).
 
+<img alt="Compulab iot-gate-imx8" src=https://www.get-edi.io/assets/images/blog/VAR-SOM-MX8M-NANO.PNG width="75%"/>
+
+
 ## Introduction
 
 The edi configuration contained in this repository can be used to
