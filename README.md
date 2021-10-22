@@ -135,7 +135,6 @@ aarch64-linux-gnu-g++ ...
 For your convenience, the LXD container shares the folder _edi-workspace_
 with the host operating system.
 
-
 ## Documenting an Artifact
 
 During the image build the documentation gets rendered to artifacts/CONFIGNAME_documentation
@@ -143,14 +142,15 @@ as reStructuredText. The text files can be transformed into a nice pdf file with
 additional tools that need to be installed first:
 
 ``` bash
-sudo apt install texlive-latex-recommended texlive-pictures texlive-latex-extra latexmk
+sudo apt install texlive-latex-recommended texlive-pictures texlive-latex-extra texlive-xetex latexmk
 ```
 
 Then the pdf can be generated using the following commands:
 
 ``` bash
 cd artifacts/CONFIGNAME_documentation
-make latexpdf
+make PDFLATEX=xelatex latexpdf
+make PDFLATEX=xelatex latexpdf
 ```
 
 ### More Information
