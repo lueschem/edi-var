@@ -1,16 +1,31 @@
 general:
-    edi_required_minimal_edi_version: 1.7.0
+    edi_required_minimal_edi_version: 1.9.0
     edi_compression: gz
     edi_lxc_network_interface_name: eth0
     edi_lxc_bridge_interface_name: edibr0
     parameters:
         ansible_pipelining: true
+        default_user_name: variscite
+        default_user_group_name: variscite
 
 bootstrap:
     tool: debootstrap
     repository: deb http://deb.debian.org/debian/ bullseye main
     repository_key: https://ftp-master.debian.org/keys/archive-key-10.asc
-    additional_packages: ["python3", "sudo", "netbase", "net-tools", "iputils-ping", "ifupdown", "isc-dhcp-client", "resolvconf", "systemd", "systemd-sysv", "gnupg", "dumb-init"]
+    additional_packages:
+      - python3
+      - python3-apt
+      - sudo
+      - netbase
+      - net-tools
+      - iputils-ping
+      - ifupdown
+      - isc-dhcp-client
+      - resolvconf
+      - systemd
+      - systemd-sysv
+      - gnupg
+      - dumb-init
 
 lxc_profiles:
     100_lxc_networking:
@@ -35,7 +50,6 @@ playbooks:
         path: playbooks/debian/base_system/main.yml
         parameters:
             create_default_user: True
-            default_user_name: variscite
             # password is variscite
             default_user_password: $6$qrh.v5qpN$xE6hIKZjqYo/vymXuYxdkKv/xU.TRVzElrXPii2wft1pbDiIVP1FMtcACDOcP4FpWmnFUopTUM36mq9NxPIp5/
             install_openssh_server: True
@@ -53,9 +67,10 @@ playbooks:
     900_base_system_cleanup:
         path: playbooks/debian/base_system_cleanup/main.yml
         parameters:
-            hostname: edi-var
+            hostname: var-som-mx8m-nano
             document_build_setup: true
             document_installed_packages: true
+            ssh_host_key_backup_folder: /data/backup/ssh
 
 postprocessing_commands:
     050_timestamp:
