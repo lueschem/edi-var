@@ -1,10 +1,11 @@
 ---
 bare_metal_packages:
   - fdisk
+  - haveged
   - initramfs-tools
+  - "{{ kernel_image }}"
   - libubootenv-tool
   - network-manager
+  - systemd-timesyncd
   - udev
-  - "{{ kernel_image }}"
-  - haveged
 
