@@ -17,3 +17,8 @@
   copy:
     src: 85-systemd_networkd.preset
     dest: /lib/systemd/system-preset/
+
+- name: Disable persistent logging to protect the eMMC/flash.
+  file:
+    path: /var/log/journal
+    state: absent
