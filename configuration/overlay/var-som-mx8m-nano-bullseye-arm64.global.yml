@@ -24,7 +24,7 @@ playbooks:
     300_board_support:
         parameters:
             ebs_template: var-som-mx8m-nano
-            kernel_image: linux-image-5.4.142-g3a0c66906337
+            kernel_image: linux-image-5.10.72-gd3d567b6bf2a
 
 shared_folders:
     edi_workspace:
