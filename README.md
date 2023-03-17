@@ -14,7 +14,7 @@ generate the following artifacts:
 
 * A **minimal** (e.g. no display, no sound) Debian bookworm arm64 (64bit) image suitable for the Variscite var-som-mx8m-nano.
 * A matching Mender update artifacts for the above configuration.
-* An LXD container with a pre-installed cross development toolchain for C and C++.
+* An LXD container with a pre-installed cross development toolchain (arm64) for C and C++.
 
 ## Important Note
 
