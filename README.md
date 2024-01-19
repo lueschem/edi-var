@@ -6,7 +6,7 @@ on the [Symphony-Board](https://www.variscite.com/product/single-board-computers
 
 <img alt="var-som-mx8m-nano" src=https://www.get-edi.io/assets/images/blog/VAR-SOM-MX8M-NANO.PNG width="75%"/>
 
-> **Note**
+> [!NOTE]
 > The *master* branch is currently basing upon Debian *bookworm*.
 > For Debian *bullseye* please check out the *debian_bullseye* branch.
 
