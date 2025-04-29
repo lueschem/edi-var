@@ -1,11 +1,11 @@
 ---
 bare_metal_packages:
-  - e2fsprogs
-  - fdisk
+  - edi-resize-rootfs
+  - edi-set-hostname
   - haveged
-  - initramfs-tools
   - iproute2
   - "{{ kernel_image }}"
+  - kmod
   - libubootenv-tool
   - network-manager
   - systemd-timesyncd
