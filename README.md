@@ -7,8 +7,8 @@ on the [Symphony-Board](https://www.variscite.com/product/single-board-computers
 <img alt="var-som-mx8m-nano" src=https://www.get-edi.io/assets/images/blog/VAR-SOM-MX8M-NANO.PNG width="75%"/>
 
 > [!NOTE]
-> The *master* branch is **experimental** and currently based on Debian *trixie*.
-> To get the stable Debian *bookworm* configuration please check out the *debian_bookworm* branch.
+> The *master* branch is currently based on Debian *trixie*.
+> To get the Debian *bookworm* configuration please check out the *debian_bookworm* branch.
 
 ## Introduction
 
